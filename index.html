@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nguyễn Tuấn Kiệt - 3D Game Artist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body
+    class="bg-gradient-to-br from-[#0a0a1e] to-[#1a0e2a] text-white font-sans"
+  >
+    <!-- Watermark mờ -->
+    <div class="fixed inset-0 z-0 pointer-events-none">
+      <img
+        src="image+video/hinh-mo.png"
+        alt="Watermark"
+        class="w-full h-full object-contain opacity-0"
+      />
+    </div>
+
+    <!-- Header -->
+    <header
+      class="fixed top-0 left-0 w-full z-50 bg-[#0a0a1e] flex justify-between items-center px-10 py-4 shadow-md"
+    >
+      <a
+        href="index.html"
+        class="flex items-center space-x-2 text-2xl font-bold"
+      >
+        <div class="w-6 h-6 bg-purple-500 rounded rotate-45"></div>
+        <span>Tuấn Kiệt Portfolio</span>
+      </a>
+      <nav class="space-x-8 hidden md:flex">
+        <a href="duan.html" class="hover:text-blue-400">Dự án</a>
+        <a href="gioithieu.html" class="hover:text-blue-400">Giới thiệu</a>
+        <a href="#contact" class="hover:text-blue-400">Liên hệ</a>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="flex flex-col md:flex-row pt-24 px-10 py-10 items-left">
+      <!-- Giới thiệu -->
+      <div class="flex-1 mt-12 space-y-6 max-w-xl">
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
+          Tôi là <span class="text-purple-400">Nguyễn Tuấn Kiệt</span><br />
+        </h1>
+        <h2 class="text-4xl md:text-5xl font-extrabold leading-tight">
+          3D Environment
+        </h2>
+        <p class="text-lg text-gray-300">
+          Tôi tạo mô hình 3D độc đáo cho game và hoạt hình. Sáng tạo là thứ
+          khiến tôi sống và thở mỗi ngày!
+        </p>
+        <a
+          href="duan.html"
+          class="block text-left bg-purple-600 px-6 py-3 rounded-full text-white font-semibold hover:bg-purple-700 transition w-fit"
+        >
+          Xem Dự Án
+        </a>
+      </div>
+
+      <!-- Hình ảnh đại diện -->
+      <div class="flex-1 mt-10 md:mt-0 md:ml-12 relative">
+        <div class="flex justify-end pr-10 mt-[55px]">
+          <!-- Ảnh đại diện (thay vì video) -->
+<img
+  src="image+video/character.png"
+  alt="Character thumbnail"
+  class="rounded-lg shadow-lg w-[550px]"
+/>
+
+          <!-- Video đại diện 
+          <vide
+            src="image+video/character.mp4"
+            controls
+            class="rounded-lg shadow-lg w-[550px]"
+          ></vide>
+        </div>-->
+
+        <!-- Có thể thêm nút nếu cần -->
+        <!--
+        <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2">
+          <a
+            href="#projects"
+            class="bg-purple-600 px-6 py-2 rounded-full hover:bg-purple-700 text-white font-semibold shadow-md transition"
+          >
+            Xem thêm
+          </a>
+        </div>
+        -->
+      </div>
+    </main>
+
+    <!-- Dự án -->
+    <section id="projects" class="px-10 py-16 bg-[#111028]">
+      <h2 class="text-3xl font-bold mb-8 text-center">Dự án tiêu biểu</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Project 1 -->
+        <a href="themelody.html">
+          <div
+            class="bg-white/5 p-4 rounded-lg hover:scale-105 transition-transform cursor-pointer"
+          >
+            <img src="project1.jpg" alt="Project 1" class="rounded mb-4" />
+            <h3 class="font-semibold text-xl">Mystic Realm</h3>
+            <p class="text-sm text-gray-400">
+              Dự án cá nhân, Maya + Unreal5 + ZBrush + Subtance
+            </p>
+          </div>
+        </a>
+
+        <!-- Project 2 -->
+        <a href="themelody.html">
+          <div
+            class="bg-white/5 p-4 rounded-lg hover:scale-105 transition-transform cursor-pointer"
+          >
+            <img
+              src="image+video/45.png"
+              alt="Project 2"
+              class="rounded mb-4"
+            />
+            <h3 class="font-semibold text-xl">The Melody Of Friendship</h3>
+            <p class="text-sm text-gray-400">Dự án cá nhân, Maya + Subtance</p>
+          </div>
+        </a>
+
+        <!-- Có thể thêm thêm project sau -->
+        <!--
+        <div class="bg-white/5 p-4 rounded-lg">
+          <img src="project3.jpg" alt="Project 3" class="rounded mb-4" />
+          <h3 class="font-semibold text-xl">Boss game độc lập</h3>
+          <p class="text-sm text-gray-400">Thiết kế nhân vật, Unity 3D.</p>
+        </div>
+        -->
+      </div>
+    </section>
+
+    <!-- Liên hệ -->
+    <section id="contact" class="px-10 py-20 text-center">
+      <h2 class="text-3xl font-bold mb-6">Liên hệ với tôi</h2>
+      <p class="text-gray-400 mb-4">
+        Bạn cần mô hình môi trường cho game hoặc hoạt hình?
+      </p>
+
+      <div class="text-lg text-white space-y-4">
+        <p>
+          📧 Email:
+          <a
+            href="mailto:nguyentuankieta420172020@gmail.com"
+            class="text-blue-400 hover:underline"
+          >
+            nguyentuankieta420172020@gmail.com
+          </a>
+        </p>
+        <p>
+          📱 Số điện thoại:
+          <a href="tel:+84905536046" class="text-blue-400 hover:underline">
+            090 5536 046
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="text-center text-sm text-gray-500 py-6 border-t border-white/10"
+    >
+      © 2025 Nguyễn Tuấn Kiệt. All rights reserved.
+    </footer>
+  </body>
+</html>

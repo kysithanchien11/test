@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dự án của Nguyễn Tuấn Kiệt</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="bg-gradient-to-br from-[#0a0a1e] to-[#1a0e2a] text-white font-sans"
+  >
+    <!-- Header -->
+    <header
+      class="fixed top-0 left-0 w-full z-50 bg-[#0a0a1e] flex justify-between items-center px-10 py-4 shadow-md"
+    >
+      <a
+        href="index.html"
+        class="flex items-center space-x-2 text-2xl font-bold"
+      >
+        <div class="w-6 h-6 bg-purple-500 rounded rotate-45"></div>
+        <span>Tuấn Kiệt Portfolio</span>
+      </a>
+      <nav class="space-x-8 hidden md:flex">
+        <a href="duan.html" class="hover:text-blue-400 font-semibold">Dự án</a>
+        <a href="gioithieu.html" class="hover:text-blue-400">Giới thiệu</a>
+        <a href="#contact" class="hover:text-blue-400">Liên hệ</a>
+      </nav>
+    </header>
+
+    <!-- Tiêu đề chính -->
+    <h1 class="text-4xl font-bold text-center mt-32 mb-10">Tất cả dự án</h1>
+
+    <!-- Danh sách dự án -->
+    <div class="grid md:grid-cols-3 gap-8 px-10">
+      <!-- Project 1 -->
+      <div class="bg-white/5 p-4 rounded-lg">
+        <img src="project1.jpg" class="rounded mb-4" />
+        <h2 class="text-xl font-semibold mb-1">Chiến binh Cyborg</h2>
+        <p class="text-sm text-gray-400">Game hành động, Unreal Engine.</p>
+      </div>
+
+      <!-- Project 2 -->
+      <a href="themelody.html">
+        <div
+          class="bg-white/5 p-4 rounded-lg hover:scale-105 transition-transform cursor-pointer"
+        >
+          <img src="image+video/45.png" alt="Project 2" class="rounded mb-4" />
+          <h3 class="font-semibold text-xl">The Melody Of Friendship</h3>
+          <p class="text-sm text-gray-400">Dự án cá nhân, Maya + Subtance</p>
+        </div>
+      </a>
+
+      <!-- Project 3 -->
+      <div class="bg-white/5 p-4 rounded-lg">
+        <img src="project3.jpg" class="rounded mb-4" />
+        <h2 class="text-xl font-semibold mb-1">Boss game độc lập</h2>
+        <p class="text-sm text-gray-400">Thiết kế nhân vật, Unity 3D.</p>
+      </div>
+    </div>
+
+    <!-- Nút quay lại -->
+    <div class="text-center mt-10">
+      <a href="index.html" class="text-pink-400 hover:underline">
+        ← Quay lại trang chủ
+      </a>
+    </div>
+  </body>
+</html>
