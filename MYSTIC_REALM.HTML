@@ -93,9 +93,10 @@
 
     <script>
       const images = Array.from(
-        { length: 107 },
-        (_, i) => `mystic_realm/${i + 1}.png`
+        { length: 107 }, // nếu có ít hoặc nhiều hơn, đổi số 107 cho đúng
+        (_, i) => `mystic_realm/${i + 1}.webp`
       );
+
       const gallery = document.getElementById("gallery");
 
       images.forEach((src) => {
