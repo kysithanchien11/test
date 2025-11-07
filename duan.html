@@ -10,63 +10,119 @@
   >
     <!-- Header -->
     <header
-      class="fixed top-0 left-0 w-full z-50 bg-[#0a0a1e] flex justify-between items-center px-10 py-4 shadow-md"
+      class="fixed top-0 left-0 w-full z-50 bg-[#0a0a1e]/90 backdrop-blur-md flex justify-between items-center px-10 py-4 shadow-md border-b border-purple-500/20"
     >
       <a
         href="index.html"
-        class="flex items-center space-x-2 text-2xl font-bold"
+        class="flex items-center space-x-2 text-2xl font-bold text-white"
       >
-        <div class="w-6 h-6 bg-purple-500 rounded rotate-45"></div>
+        <div
+          class="w-6 h-6 bg-gradient-to-br from-purple-500 to-pink-400 rounded rotate-45 shadow-md shadow-purple-500/40"
+        ></div>
         <span>Tuấn Kiệt Portfolio</span>
       </a>
-      <nav class="space-x-8 hidden md:flex">
-        <a href="duan.html" class="hover:text-blue-400 font-semibold">Dự án</a>
-        <a href="gioithieu.html" class="hover:text-blue-400">Giới thiệu</a>
-        <a href="#contact" class="hover:text-blue-400">Liên hệ</a>
+      <nav class="space-x-8 hidden md:flex text-gray-300">
+        <a href="duan.html" class="hover:text-purple-400 font-semibold"
+          >Dự án</a
+        >
+        <a href="gioithieu.html" class="hover:text-purple-400">Giới thiệu</a>
+        <a href="#contact" class="hover:text-purple-400">Liên hệ</a>
       </nav>
     </header>
 
     <!-- Tiêu đề chính -->
-    <h1 class="text-4xl font-bold text-center mt-32 mb-10">Tất cả dự án</h1>
+    <h1 class="text-5xl font-bold text-center mt-32 mb-12 text-white">
+      Tất cả Dự án
+    </h1>
 
     <!-- Danh sách dự án -->
-    <div class="grid md:grid-cols-3 gap-8 px-10">
+    <div class="grid md:grid-cols-3 gap-10 px-10">
       <!-- Project 1 -->
-      <a href="MYSTIC_REALM.HTML">
+      <a href="MYSTIC_REALM.HTML" class="group">
         <div
-          class="bg-white/5 p-4 rounded-lg hover:scale-105 transition-transform cursor-pointer"
+          class="bg-white/5 p-4 rounded-2xl shadow-lg shadow-black/30 hover:scale-105 hover:shadow-purple-600/30 transition-all duration-300 cursor-pointer flex flex-col justify-between h-full"
         >
-          <img src="mystic_realm/1.png" alt="Project 1" class="rounded mb-4" />
-          <h3 class="font-semibold text-xl">Mystic Realm</h3>
-          <p class="text-sm text-gray-400">
-            Dự án cá nhân, Maya + Unreal5 + ZBrush + Subtance
-          </p>
+          <img
+            src="mystic_realm/1.png"
+            alt="Mystic Realm"
+            class="rounded-lg mb-4 h-56 w-full object-cover group-hover:opacity-90 transition"
+          />
+          <div>
+            <h3
+              class="font-semibold text-xl mb-1 text-white group-hover:text-purple-400 transition"
+            >
+              Mystic Realm
+            </h3>
+            <p class="text-sm text-gray-400">
+              Dự án cá nhân • Maya • Unreal Engine 5 • ZBrush • Substance
+              Painter
+            </p>
+          </div>
         </div>
       </a>
+
       <!-- Project 2 -->
-      <a href="themelody.html">
+      <a href="themelody.html" class="group">
         <div
-          class="bg-white/5 p-4 rounded-lg hover:scale-105 transition-transform cursor-pointer"
+          class="bg-white/5 p-4 rounded-2xl shadow-lg shadow-black/30 hover:scale-105 hover:shadow-purple-600/30 transition-all duration-300 cursor-pointer flex flex-col justify-between h-full"
         >
-          <img src="image+video/45.png" alt="Project 2" class="rounded mb-4" />
-          <h3 class="font-semibold text-xl">The Melody Of Friendship</h3>
-          <p class="text-sm text-gray-400">Dự án cá nhân, Maya + Subtance</p>
+          <img
+            src="image+video/45.png"
+            alt="The Melody Of Friendship"
+            class="rounded-lg mb-4 h-56 w-full object-cover group-hover:opacity-90 transition"
+          />
+          <div>
+            <h3
+              class="font-semibold text-xl mb-1 text-white group-hover:text-purple-400 transition"
+            >
+              The Melody Of Friendship
+            </h3>
+            <p class="text-sm text-gray-400">
+              Dự án cá nhân • Maya • Substance Painter
+            </p>
+          </div>
         </div>
       </a>
 
       <!-- Project 3 -->
-      <div class="bg-white/5 p-4 rounded-lg">
-        <img src="project3.jpg" class="rounded mb-4" />
-        <h2 class="text-xl font-semibold mb-1">Boss game độc lập</h2>
-        <p class="text-sm text-gray-400">Thiết kế nhân vật, Unity 3D.</p>
-      </div>
+      <a href="HardSurface.html" class="group">
+        <div
+          class="bg-white/5 p-4 rounded-2xl shadow-lg shadow-black/30 hover:scale-105 hover:shadow-purple-600/30 transition-all duration-300 cursor-pointer flex flex-col justify-between h-full"
+        >
+          <img
+            src="image/5.jpg"
+            alt="Hard Surface Showcase"
+            class="rounded-lg mb-4 h-56 w-full object-cover group-hover:opacity-90 transition"
+          />
+          <div>
+            <h3
+              class="font-semibold text-xl mb-1 text-white group-hover:text-purple-400 transition"
+            >
+              Hard Surface Showcase
+            </h3>
+            <p class="text-sm text-gray-400">
+              Dự án cá nhân • Maya • Substance Painter
+            </p>
+          </div>
+        </div>
+      </a>
     </div>
 
-    <!-- Nút quay lại -->
-    <div class="text-center mt-10">
-      <a href="index.html" class="text-pink-400 hover:underline">
+    <!-- Nút quay lại TRUNG TÂM -->
+    <div class="flex justify-center mt-20">
+      <a
+        href="index.html"
+        class="inline-block text-lg font-semibold bg-gradient-to-r from-purple-600 to-pink-500 px-10 py-4 rounded-full text-white shadow-lg shadow-purple-500/30 hover:shadow-pink-400/50 hover:scale-105 transition-all duration-300"
+      >
         ← Quay lại trang chủ
       </a>
     </div>
+
+    <!-- Footer -->
+    <footer
+      class="text-center text-sm text-gray-500 py-8 border-t border-white/10 mt-20"
+    >
+      © 2025 Nguyễn Tuấn Kiệt. All rights reserved.
+    </footer>
   </body>
 </html>

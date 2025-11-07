@@ -5,168 +5,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nguyễn Tuấn Kiệt - 3D Hard Surface Artist</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body
-    class="bg-gradient-to-br from-[#0a0a1e] to-[#1a0e2a] text-white font-sans"
-  >
-    <!-- Watermark mờ -->
-    <div class="fixed inset-0 z-0 pointer-events-none">
-      <img
-        src="image+video/hinh-mo.png"
-        alt="Watermark"
-        class="w-full h-full object-contain opacity-0"
-      />
-    </div>
 
+  <body
+    class="bg-gradient-to-br from-[#0a0a1e] via-[#1a0e2a] to-[#23114a] text-gray-200 font-sans selection:bg-purple-500/30"
+  >
     <!-- Header -->
     <header
-      class="fixed top-0 left-0 w-full z-50 bg-[#0a0a1e] flex justify-between items-center px-10 py-4 shadow-md"
+      class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-black/30 border-b border-white/10 flex justify-between items-center px-10 py-4"
     >
       <a
         href="index.html"
-        class="flex items-center space-x-2 text-2xl font-bold"
+        class="flex items-center space-x-2 text-2xl font-bold text-white"
       >
-        <div class="w-6 h-6 bg-purple-500 rounded rotate-45"></div>
+        <div
+          class="w-6 h-6 bg-gradient-to-br from-purple-500 to-pink-400 rounded rotate-45 shadow-lg shadow-purple-500/30"
+        ></div>
         <span>Tuấn Kiệt Portfolio</span>
       </a>
-      <nav class="space-x-8 hidden md:flex">
-        <a href="duan.html" class="hover:text-blue-400">Dự án</a>
-        <a href="gioithieu.html" class="hover:text-blue-400">Giới thiệu</a>
-        <a href="#contact" class="hover:text-blue-400">Liên hệ</a>
+      <nav class="space-x-8 hidden md:flex text-gray-300">
+        <a href="duan.html" class="hover:text-purple-400 transition">Dự án</a>
+        <a href="gioithieu.html" class="hover:text-purple-400 transition"
+          >Giới thiệu</a
+        >
+        <a href="#contact" class="hover:text-purple-400 transition">Liên hệ</a>
       </nav>
     </header>
 
-    <!-- Main -->
-    <main class="flex flex-col md:flex-row pt-24 px-10 py-10 items-left">
-      <!-- Giới thiệu -->
-      <div class="flex-1 mt-12 space-y-6 max-w-xl">
-        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
-          Tôi là <span class="text-purple-400">Nguyễn Tuấn Kiệt</span><br />
+    <!-- Giới thiệu -->
+    <main
+      class="flex flex-col md:flex-row pt-32 px-10 pb-20 items-center gap-12"
+    >
+      <div class="flex-1 space-y-6 max-w-xl">
+        <h1 class="text-5xl font-extrabold leading-tight">
+          Tôi là
+          <span
+            class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 drop-shadow-[0_0_10px_rgba(168,85,247,0.4)]"
+            >Nguyễn Tuấn Kiệt</span
+          >
         </h1>
-        <h2 class="text-4xl md:text-5xl font-extrabold leading-tight">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-white">
           3D Hard Surface
         </h2>
-        <p class="text-lg text-gray-300">
-          Mục tiêu của tôi là trở thành một 3D Hard Surface Artist chuyên nghiệp,
-          có khả năng thiết kế và dựng hình chi tiết các mô hình sản phẩm, nhân vật
-          và môi trường phục vụ cho phim hoạt hình hoặc game 3D. Tôi luôn chú trọng
-          đến tính chân thực, kỹ thuật và thẩm mỹ trong từng sản phẩm, đồng thời không 
-          ngừng học hỏi để nâng cao kỹ năng và cập nhật công nghệ mới. Tôi mong muốn 
-          được tham gia vào những dự án sáng tạo, năng động, nơi tôi có thể phát huy
-          khả năng của mình và đóng góp vào quá trình xây dựng nên những thế giới 3D sống động.
+        <p class="text-lg text-gray-300 leading-relaxed">
+          Mục tiêu của tôi là trở thành một 3D Hard Surface Artist chuyên
+          nghiệp, có khả năng thiết kế và dựng hình chi tiết các mô hình sản
+          phẩm, nhân vật và môi trường phục vụ cho phim hoạt hình hoặc game 3D.
+          Tôi luôn chú trọng đến tính chân thực, kỹ thuật và thẩm mỹ trong từng
+          sản phẩm, đồng thời không ngừng học hỏi để nâng cao kỹ năng và cập
+          nhật công nghệ mới.
         </p>
         <a
           href="duan.html"
-          class="block text-left bg-purple-600 px-6 py-3 rounded-full text-white font-semibold hover:bg-purple-700 transition w-fit"
+          class="inline-block bg-gradient-to-r from-purple-600 to-pink-500 px-8 py-3 rounded-full text-white font-semibold shadow-lg shadow-purple-500/30 hover:shadow-pink-400/50 hover:scale-105 transition-transform duration-300"
         >
           Xem Dự Án
         </a>
       </div>
 
-      <!-- Hình ảnh đại diện -->
-      <div class="flex-1 mt-10 md:mt-0 md:ml-12 relative">
-        <div class="flex justify-end pr-10 mt-[55px]">
-          <!-- Ảnh đại diện (thay vì video) -->
-<img
-  src="image/mu_bao_hiem_wire.jpg"
-  alt="Character thumbnail"
-  class="rounded-lg shadow-lg w-[550px]"
-/>
-
-          <!-- Video đại diện 
-          <vide
-            src="image+video/character.mp4"
-            controls
-            class="rounded-lg shadow-lg w-[550px]"
-          ></vide>
-        </div>-->
-
-        <!-- Có thể thêm nút nếu cần -->
-        <!--
-        <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2">
-          <a
-            href="#projects"
-            class="bg-purple-600 px-6 py-2 rounded-full hover:bg-purple-700 text-white font-semibold shadow-md transition"
-          >
-            Xem thêm
-          </a>
-        </div>
-        -->
+      <!-- Hình ảnh -->
+      <div class="flex-1 flex justify-center">
+        <img
+          src="image/4.jpg"
+          alt="Character thumbnail"
+          class="rounded-2xl shadow-2xl shadow-purple-900/40 border border-purple-600/20 hover:border-purple-400/50 hover:shadow-purple-700/50 transition-all duration-500 w-[500px]"
+        />
       </div>
     </main>
 
-    <!-- Dự án -->
-    <section id="projects" class="px-10 py-16 bg-[#111028]">
-      <h2 class="text-3xl font-bold mb-8 text-center">Dự án tiêu biểu</h2>
-      <div class="grid md:grid-cols-3 gap-6">
-        <!-- Project 1 -->
-        <a href="MYSTIC_REALM.HTML">
-          <div
-            class="bg-white/5 p-4 rounded-lg hover:scale-105 transition-transform cursor-pointer"
-          >
-            <img src="mystic_realm/1.png" alt="Project 1" class="rounded mb-4" />
-            <h3 class="font-semibold text-xl">Mystic Realm</h3>
-            <p class="text-sm text-gray-400">
-              Dự án cá nhân, Maya + Unreal5 + ZBrush + Subtance
-            </p>
-          </div>
-        </a>
-
-        <!-- Project 2 -->
-        <a href="themelody.html">
-          <div
-            class="bg-white/5 p-4 rounded-lg hover:scale-105 transition-transform cursor-pointer"
-          >
-            <img
-              src="image+video/45.png"
-              alt="Project 2"
-              class="rounded mb-4"
-            />
-            <h3 class="font-semibold text-xl">The Melody Of Friendship</h3>
-            <p class="text-sm text-gray-400">Dự án cá nhân, Maya + Subtance</p>
-          </div>
-        </a>
-
-        <!-- Có thể thêm thêm project sau -->
-       
-        <!-- Project 3 -->
-        <a href="themelody.html">
-          <div
-            class="bg-white/5 p-4 rounded-lg hover:scale-105 transition-transform cursor-pointer"
-          >
-            <img
-              src="image/xe_dap_wire.jpg"
-              alt="Project 2"
-              class="rounded mb-4"
-            />
-            <h3 class="font-semibold text-xl">Dự án cá nhân Hard Surface</h3>
-            <p class="text-sm text-gray-400">Dự án cá nhân, Maya</p>
-          </div>
-        </a>
+    <!-- Showcase -->
+    <section class="px-10 py-20 bg-gradient-to-b from-[#1a0e2a] to-[#0a0a1e]">
+      <h1 class="text-5xl font-bold text-center mb-12 text-white">
+        Hard Surface Modeling Showcase
+      </h1>
+      <div id="gallery" class="grid md:grid-cols-3 gap-8"></div>
     </section>
 
     <!-- Liên hệ -->
-    <section id="contact" class="px-10 py-20 text-center">
-      <h2 class="text-3xl font-bold mb-6">Liên hệ với tôi</h2>
+    <section id="contact" class="px-10 py-20 text-center bg-[#0a0a1e]">
+      <h2 class="text-3xl font-bold mb-6 text-white">Liên hệ với tôi</h2>
       <p class="text-gray-400 mb-4">
         Bạn cần mô hình môi trường cho game hoặc hoạt hình?
       </p>
-
-      <div class="text-lg text-white space-y-4">
+      <div class="text-lg space-y-4">
         <p>
           📧 Email:
           <a
             href="mailto:nguyentuankieta420172020@gmail.com"
-            class="text-blue-400 hover:underline"
+            class="text-purple-400 hover:underline"
           >
             nguyentuankieta420172020@gmail.com
           </a>
         </p>
         <p>
           📱 Số điện thoại:
-          <a href="tel:+84905536046" class="text-blue-400 hover:underline">
-            090 5536 046 - 0925376577
+          <a href="tel:+84905536046" class="text-purple-400 hover:underline">
+            090 5536 046 - 0925 376 577
           </a>
         </p>
       </div>
@@ -178,5 +112,71 @@
     >
       © 2025 Nguyễn Tuấn Kiệt. All rights reserved.
     </footer>
+
+    <script>
+      const images = Array.from({ length: 7 }, (_, i) => `image/${i + 1}.jpg`);
+      const gallery = document.getElementById("gallery");
+      let currentIndex = 0;
+
+      images.forEach((src, i) => {
+        const div = document.createElement("div");
+        div.className =
+          "bg-white/5 p-4 rounded-xl overflow-hidden hover:scale-105 hover:bg-white/10 transition-all duration-300";
+        div.innerHTML = `<img src="${src}" onclick="openImage(${i})" class="rounded-lg cursor-pointer transition hover:shadow-lg hover:shadow-purple-500/40" />`;
+        gallery.appendChild(div);
+      });
+
+      function openImage(index) {
+        currentIndex = index;
+        showModal();
+      }
+
+      function showModal() {
+        const src = images[currentIndex];
+        const modal = document.createElement("div");
+        modal.id = "imageModal";
+        modal.className =
+          "fixed inset-0 bg-black/90 flex items-center justify-center z-50";
+        modal.innerHTML = `
+          <button onclick="closeModal()" class="absolute top-6 right-6 text-3xl text-white hover:text-purple-400">✕</button>
+          <button onclick="prevImage()" class="absolute left-8 text-5xl text-white hover:text-purple-400">❮</button>
+          <img src="${src}" class="max-h-[80vh] rounded-xl shadow-2xl shadow-purple-900/50 border border-purple-500/30 transition-all duration-300" />
+          <button onclick="nextImage()" class="absolute right-8 text-5xl text-white hover:text-purple-400">❯</button>
+        `;
+        document.body.appendChild(modal);
+      }
+
+      function closeModal() {
+        const modal = document.getElementById("imageModal");
+        if (modal) modal.remove();
+      }
+
+      function nextImage() {
+        currentIndex = (currentIndex + 1) % images.length;
+        updateModalImage();
+      }
+
+      function prevImage() {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        updateModalImage();
+      }
+
+      function updateModalImage() {
+        const modal = document.getElementById("imageModal");
+        if (modal) {
+          const img = modal.querySelector("img");
+          img.src = images[currentIndex];
+        }
+      }
+
+      // Hỗ trợ phím ← → để chuyển ảnh
+      document.addEventListener("keydown", (e) => {
+        const modal = document.getElementById("imageModal");
+        if (!modal) return;
+        if (e.key === "ArrowRight") nextImage();
+        if (e.key === "ArrowLeft") prevImage();
+        if (e.key === "Escape") closeModal();
+      });
+    </script>
   </body>
 </html>
